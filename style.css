@@ -29,6 +29,13 @@ body {
     line-height: 1.5;
 }
 
+.intro img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .intro button {
     background-color: #4345e7;
     color: white;
