@@ -1,0 +1,74 @@
+:root {
+    --text-color: #555c66;
+    --background-light: #f2f2f2;
+    --background-dark: #292d33;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2 !important;
+}
+
+.intro h1 {
+    font-size: 4em;
+}
+
+#imp {
+    color: #555c66;
+    line-height: 2;
+    font-size: 1.5em;
+}
+
+.intro p {
+    color: #555c66;
+    line-height: 1.5;
+}
+
+.intro button {
+    background-color: #4345e7;
+    color: white;
+}
+
+.intro button:hover {
+    background-color: #555c66;
+    color: white;
+}
+
+#sign-up-btn {
+    background-color: #4345e7;
+    color: white;
+}
+
+#sign-up-btn:hover {
+    background-color: #555c66;
+    color: white;
+}
+
+.about {
+    background-color: #292d33;
+}
+
+.about h1 {
+    font-size: 3em;
+    color: white;
+}
+
+#estate {
+    font-size: 1.5em;
+    background-color: #fff;
+}
+
+#type1, #type2, #type3 {
+    background-color: white;
+    padding: 1em;
+}
+
+#type1 p, #type2 p, #type3 p {
+    color: #555c66;
+    line-height: 2;
+}
