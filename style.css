@@ -79,3 +79,58 @@ body {
     color: #555c66;
     line-height: 2;
 }
+
+.sectors img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#real, #hospital, #automobile, #financial {
+    background-color: white;
+    margin: 15px;
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+}
+
+#real img, #hospital img, #financial img, #automobile img {
+    margin-bottom: 20px;
+}
+
+#financial {
+    margin-top: -15px;
+}
+
+#residential, #commercial, #plotting {
+    background-color: #555c66;
+    margin: 10px;
+    padding: 20px;
+    height: 200px;
+}
+
+.diff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ongoing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media screen and (max-width: 360px) {
+    #financial {
+        margin-top: 10px;
+    }
+}
