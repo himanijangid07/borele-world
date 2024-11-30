@@ -35,14 +35,14 @@
           <nav class="navbar bg-light text-dark navbar-expand-xl py-4">
             <a href="index.html" class="navbar-brand" style="font-size: 30px;"></a>
             <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="fa fa-bars text-primary"></span>
+            <span class="fa fa-bars" style="color: #4345e7;"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <div class="navbar-nav mx-auto">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="#about" class="nav-item nav-link">About</a>
               </div>
-              <a href="contact.html" class="btn" id="sign-up-btn">Contact</a>
+              <a href="#contact" class="btn" id="sign-up-btn">Contact</a>
             </div>
           </nav>
     </div>
@@ -50,17 +50,17 @@
     <div class="container-fluid py-6">
         <div class="container">
         <div class="row intro">
-            <div class="col-lg-6 col-12 p-3 text-center wow bounceInLeft">
-                <img src="images/1.jpeg" alt="">
+            <div class="col-lg-6 col-12 p-3 text-center wow bounceInLeft" data-wow-delay="0.5s">
+                <img src="images/shyam.jpeg" alt="">
             </div>
-            <div class="col-lg-6 col-12 mt-5">
+            <div class="col-lg-6 col-12 mt-5 wow">
                 <h1>BORELE
                     <br>
                     WORLD
                 </h1>
                 <p id="imp">Bhaiji Group of Companies: A Legacy of Excellence</p>
                 <p>Bhaiji Infra Projects Pvt. Ltd. is a 25-year-old legacy company founded by the visionary Mr. Shyam Borele, whose dedication and hard work laid the foundation for the company's remarkable journey. Supported by Ms. Sushma Borele, a pillar of strength, and Ms. Samiksha Borele, a dynamic leader driving innovation, the company exemplifies a harmonious blend of experience and forward-thinking leadership. Over the past two and a half decades, Borele world has evolved into a diversified enterprise with operations spanning real estate, financial services, hospitality, commercial development, and residential development.</p>
-                <a href="">
+                <a href="#about">
                     <button class="btn">Read More</button>
                 </a>
             </div>
@@ -68,13 +68,14 @@
     </div>
     </div>
 
-    <div class="container-fluid about py-6">
+    <div class="container-fluid about py-6" id="about">
         <div class="container my-5 py-5">
             <h1>Our Legacy of Achievements</h1>
             <div class="row">
                 <div class="col-lg-6 col-12 text-light my-5 py-3 rounded">
                     <h4 class="mt-5">ABOUT</h4>
                     <h1>We understand your situation. Let us guide you.</h1>
+                    
                 </div>
                 <div class="col-lg-6 col-12 my-5 sectors">
                     <div class="row">
@@ -105,31 +106,55 @@
         <div class="container">
             <h1 class="text-center">Real Estate Development: Bhaiji Infraprojects Pvt Ltd.</h1>
             <div class="row my-5 diff">
-                <div class="col-lg-3 col-12" id="residential">
+                <div class="col-lg-3 col-12 rounded" id="residential">
                     <h5>1. Residential Development:</h5>
                     <p>Completed a 400-unit residential project named Bhaiji Panchajanya in Kondapur, Hyderabad, meeting the highest standards of urban living.</p>
                 </div>
-                <div class="col-lg-3 col-12" id="plotting">
+                <div class="col-lg-3 col-12 rounded" id="plotting">
                     <h5>2. Plotting Projects:</h5>
                     <p>Developed Shyam Nagri, a thoughtfully planned 17-acre plotting project at Besa, Nagpur, creating lucrative investment opportunities for the future.</p>
                 </div>
-                <div class="col-lg-3 col-12" id="commercial">
+                <div class="col-lg-3 col-12 rounded" id="commercial">
                     <h5>3. Commercial Development:</h5>
                     <p>Delivered Bhaiji Complex, a well-designed commercial project in Nagpur, offering premium spaces for businesses and retailers.</p>
                 </div>
             </div>
             <h3 class="my-5 text-center">Ongoing Projects in Real Estate Sector</h3>
-            <div class="row ongoing">
-                <div class="col-lg-4 col-12">
+            <div class="row ongoing mb-5">
+                <div class="col-lg-4 col-12 rounded" id="residential1">
                     <h6>Residential Development in Besa, Nagpur</h6>
                     <p>A sprawling 5-acre residential project focused on creating community-centric modern living spaces.</p>
                 </div>
-                <div class="col-lg-4 col-12">
+                <div class="col-lg-4 col-12 rounded" id="tower">
                     <h6>Bhaiji Tower</h6>
                     <p>A commercial project located at Abhankar Nagar, Nagpur, offering contemporary spaces for businesses.</p>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container-fluid" style="background-color: #292d33;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="text-center pt-5 text-light">Hospitality Sector : SB Hospitality Pvt Ltd.</h1>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 my-5 p-3 col-12 rounded" id="tiana">
+                            <h3>Tiana Inn</h3>
+                            <p>Successfully operating the Tiana Inn, a hospitality brand known for warm services and exceptional guest experiences.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 mb-5 p-3 col-12 rounded" id="upcoming">
+                            <h3>Upcoming Luxury Projects</h3>
+                            <p>Venturing into premium hospitality with an upcoming five-star luxury hotel and banquet facilities at Hingna Road, MIDC, Nagpur, designed to redefine comfort and set new industry standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>

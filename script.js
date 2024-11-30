@@ -9,9 +9,9 @@ jQuery.noConflict();
             if ($('#spinner').length > 0) {
                 $('#spinner').removeClass('show');
             }
-        }, 1);
+        }, 1000); // Wait 1 second before hiding spinner
     };
-    spinner(0);
+    spinner();
     
     
     // Initiate the wowjs

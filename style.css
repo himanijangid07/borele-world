@@ -14,6 +14,19 @@ body {
     background-color: #f2f2f2 !important;
 }
 
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .8s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .8s ease-out, visibility 0s linear .0s;
+    visibility: visible;
+    opacity: 1;
+}
+
 .intro h1 {
     font-size: 4em;
 }
@@ -111,6 +124,7 @@ body {
     margin: 10px;
     padding: 20px;
     height: 200px;
+    color: white;
 }
 
 .diff {
@@ -129,8 +143,38 @@ body {
     gap: 20px;
 }
 
+#residential1, #tower {
+    background-color: #555c66;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+}
+
+#tiana, #upcoming {
+    background-color: white;
+}
+
+#upcoming {
+    position: relative;
+    left:50%;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.images img {
+    width: 250px;
+    height: auto;
+    margin: 10px;
+}
+
 @media screen and (max-width: 360px) {
     #financial {
         margin-top: 10px;
+    }
+    #upcoming {
+        left: 0;
     }
 }
