@@ -242,6 +242,10 @@ body {
     text-decoration: none;
 }
 
+.navbar {
+    color: white;
+}
+
 @media screen and (max-width: 360px) {
     #financial {
         margin-top: 10px;
