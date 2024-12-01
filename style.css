@@ -170,6 +170,78 @@ body {
     margin: 10px;
 }
 
+.loans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.directors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#d1, #d2, #d3 {
+    z-index: -1;
+    position: relative;
+}
+
+.info {
+    z-index: 1;
+    background-color: #555c66;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 12%;
+    color: white;
+}
+
+#more {
+    display: none;
+}
+
+#myBtn1, #myBtn2, #myBtn3 {
+    background-color: #4345e7;
+    color: white;
+}
+
+#myBtn1:hover, #myBtn2:hover, #myBtn3:hover {
+    background-color: #555c66;
+    color: white;
+}
+
+.why {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.points {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+}
+
+.border-bottom {
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 360px) {
     #financial {
         margin-top: 10px;
@@ -177,4 +249,8 @@ body {
     #upcoming {
         left: 0;
     }
+    .points {
+        gap: 10px;
+    }
 }
+
