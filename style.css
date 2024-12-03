@@ -1,13 +1,41 @@
 :root {
-    --text-color: #555c66;
-    --background-light: #f2f2f2;
-    --background-dark: #3d5a80;
+    --color-green: #1d5049;
+    --color-blue: #01213a;
+    --color-light-blue: #044b81;
+    --color-dark-green: #093b30;
+    --color-green1: #275731;
+    --color-green2: #729a44;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #fff !important;
+    margin-top: 100px !important;
+}
+
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .8s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+ }
+
+ #spinner.show {
+     transition: opacity .8s ease-out, visibility 0s linear .0s;
+     visibility: visible;
+     opacity: 1;
+ }
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
 }
 
 .nav-bar {
@@ -17,236 +45,175 @@
     width: 100%; /* Ensure it spans the full width */
     z-index: 1030; /* Ensure it stays above other elements */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+    background-color: white;
+    font-weight: bold;
 }
 
 .nav-item:hover {
-    color: #98c1d9 !important;
+    color: var(--color-light-blue) !important;
 }
 
-body {
-    background-color: #f2f2f2 !important;
-    margin-top: 100px !important;
+.nav-bar span {
+    color: var(--color-green);
 }
 
-#spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .8s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
+.hero-start {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.90) 29.25%, rgba(0, 0, 0, 0.40) 64.5%), url(images/finance5.jpeg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    background-position: center;
+    position: relative;
+    display: flex;/* Vertically center the text */
+    justify-content: center;
 }
 
-#spinner.show {
-    transition: opacity .8s ease-out, visibility 0s linear .0s;
-    visibility: visible;
-    opacity: 1;
+.hero-content {
+    position: absolute; /* Allows absolute positioning within hero-start */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    z-index: 1; /* Ensure text appears above the background */
+    align-items: center;
 }
 
-.intro h1 {
-    font-size: 4em;
+.hero-text {
+    font-size: 3rem; /* Adjust as per your design */
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
 }
 
-#imp {
-    color: #555c66;
-    line-height: 2;
-    font-size: 1.5em;
+.hero-content p {
+    font-size: 2em;
+    font-weight: bold;
 }
 
-.intro p {
-    color: #555c66;
-    line-height: 1.5;
-    text-align: justify;
+.vision h2 {
+    color: var(--color-light-blue);
+    text-transform: uppercase;
 }
 
-.intro img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border: 2px solid black;
+.values {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.intro button {
-    background-color: #ee6c4d;
-    color: white;
-}
-
-.intro button:hover {
-    background-color: #98c1d9;
-    color: white;
-}
-
-.about {
-    background-color: var(--background-dark);
-}
-
-.about h1 {
-    font-size: 3em;
-    color: white;
-}
-
-#estate {
-    font-size: 1.5em;
-    background-color: #e0fbfc;
-}
-
-#type1, #type2, #type3 {
-    background-color: #e0fbfc;
-    padding: 1em;
-}
-
-#type1 p, #type2 p, #type3 p {
-    color: #555c66;
-    line-height: 2;
-    text-align: justify;
-}
-
-.sectors img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-#real, #hospital, #automobile, #financial {
-    color: white;
-    margin: 15px;
-    width: 250px;
-    height: 350px;
-    padding: 20px;
-}
-
-#real img, #hospital img, #financial img, #automobile img {
-    margin-bottom: 20px;
-}
-
-#financial {
-    margin-top: -15px;
-}
-
-#residential, #commercial, #plotting {
-    background-color: #293241;
-    margin: 10px;
-    padding: 20px;
+#vision, #mission, #core {
+    width: 300px;
     height: 200px;
     color: white;
-}
-
-.diff {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.ongoing {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-#residential1, #tower {
-    background-color: #293241;
-    color: white;
     margin: 10px;
     padding: 20px;
 }
 
-#tiana, #upcoming {
-    background-color: #e0fbfc;
+#vision {
+    background-color: var(--color-green1);
 }
 
-#tiana p, #upcoming p {
-    text-align: justify;
+#mission, #core {
+    background-color: var(--color-blue);
 }
 
-#upcoming {
+.boxes {
     position: relative;
-    left:50%;
+    height: 300px;
 }
 
-.images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.box1, .box2, .box3, .box4 {
+    height: 300px;
+    position: absolute;
+    width: 90%;
 }
 
-.images img {
-    width: 250px;
-    height: auto;
-    margin: 10px;
+.box1 {
+    width: 90%;
+    background-color: var(--color-green2);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    top: 0;
+    left: 0;
 }
 
-.loans {
+.box2 {
+    width: 70%;
+    background-color: var(--color-blue);
+    left: 0;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.box3 {
+    height: 150px;
+    width: 50%;
+    background-color: var(--color-green1);
+    left: 0;
+    top: 25%;
+}
+
+.box4 img {
+    width: 90%;
+    height: 150px;
+}
+
+.box4 {
+    left: 8%;
+    top: 25%;
+}
+
+.world {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     gap: 20px;
-}
-
-.directors {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .info {
-    z-index: 1;
-    background-color: #98c1d9;
-    padding: 10px;
-    text-align: center;
-    position: absolute;
-    top: 80%;
-    left: 12%;
-    color: white;
+    text-align: justify;
 }
 
-.why {
+.box {
+    width: 100%;
+    height: 100px;
+    background-color: var(--color-green2);
+}
+
+.images img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-top: -50px;
+}
+
+.images {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-evenly; /* Center items vertically */
     gap: 20px;
 }
 
-.points {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-
-.back-to-top {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    z-index: 99;
-}
-
-.border-bottom {
-    text-decoration: none;
-}
-
-.link {
-    text-decoration: none;
-}
-
-.navbar {
-    color: white;
+@media (max-width: 768px) {
+    .box {
+        background-color: white;
+    }
+    .images {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; 
+        justify-content: center;/* Center items horizontally */
+        gap: 30px; /* Increase spacing between vertical items */
+    }
 }
 
 @media screen and (max-width: 360px) {
-    #financial {
+    .images img {
         margin-top: 10px;
     }
-    #upcoming {
-        left: 0;
-    }
-    .points {
-        gap: 10px;
-    }
 }
-

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Borele World</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -32,180 +35,118 @@
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
 
-    <div class="container-fluid nav-bar" style="background-color: #293241;">
-        <nav class="navbar navbar-expand-xl py-4">
-            <a href="index.html" class="navbar-brand px-lg-3 fw-bold" style="font-size: 30px; color: #ee6c4d;"> Borele World</a>
+    <div class="container-fluid nav-bar">
+        <nav class="navbar navbar-expand-xl py-2">
+            <a href="index.html" class="navbar-brand px-lg-3 fw-bold"><img src="images/Borele World Logo Final png.png" alt="" width="150px"></a>
             <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="fa fa-bars" style="color: #ee6c4d;"></span>
+            <span class="fa fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
-                <a href="index.html" class="nav-item nav-link active text-light">Home</a>
-                <a href="#about" class="nav-item nav-link text-light">About</a>
-                <a href="#contact" class="nav-item nav-link text-light">Contact</a>
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
                 </div>
             </div>
         </nav>
     </div>
 
-    <div class="container-fluid py-6">
-        <div class="container">
-        <div class="row intro">
-            <div class="col-lg-6 col-12 p-3 text-center wow bounceInLeft" data-wow-delay="0.5s">
-                <img src="images/shyam.jpeg" alt="" style="max-width: 100%; height: auto;">
-            </div>
-            <div class="col-lg-6 col-12 mt-5 wow wow bounceInRight" data-wow-delay="0.5s">
-                <h1>BORELE
-                    <br>
-                    WORLD
-                </h1>
-                <p id="imp">Bhaiji Group of Companies: A Legacy of Excellence</p>
-                <p>Bhaiji Infra Projects Pvt. Ltd. is a 25-year-old legacy company founded by the visionary Mr. Shyam Borele, whose dedication and hard work laid the foundation for the company's remarkable journey. Supported by Ms. Sushma Borele, a pillar of strength, and Ms. Samiksha Borele, a dynamic leader driving innovation, the company exemplifies a harmonious blend of experience and forward-thinking leadership. Over the past two and a half decades, Borele world has evolved into a diversified enterprise with operations spanning real estate, financial services, hospitality, commercial development, and residential development.</p>
-                <a href="#about">
-                    <button class="btn wow bounceInRight" data-wow-delay="0.5s">Read More</button>
-                </a>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <div class="container-fluid about py-6" id="about">
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-lg-6 col-12 text-light my-5 py-3 rounded wow bounceInLeft" data-wow-delay="1.0s">
-                    <h4 class="mt-5">ABOUT</h4>
-                    <h1 class="mb-5">We understand your situation. Let us guide you.</h1>
-                    <img src="images/img1.jpeg" alt="" style="max-width: 100%; height: auto;">
-                </div>
-                <div class="col-lg-6 col-12 my-5 sectors">
-                    <div class="row">
-                        <div class="col-lg-4 col-12 mt-5 wow bounceInDown" id="real" data-wow-delay="1.5s">
-                            <img src="images/real.webp" alt="">
-                            <h4>Real Estate Development: Bhaiji Infraprojects Pvt Ltd.</h4>
-                        </div>
-                        <div class="col-lg-4 col-12 wow bounceInDown" id="hospital" data-wow-delay="1.5s">
-                            <img src="images/hospital.webp" alt="">
-                            <h4>Hospitality Sector : SB Hospitality Pvt Ltd.</h4>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-12 wow bounceInUp" id="automobile" data-wow-delay="1.5s">
-                            <img src="images/automobile.jpg" alt="">
-                            <h4>Automobile Industry: Bhaiji Moters Pvt Ltd.</h4>
-                        </div>
-                        <div class="col-lg-4 col-12 wow bounceInUp" id="financial" data-wow-delay="1.5s">
-                            <img src="images/financial.jpg" alt="">
-                            <h4>Financial Services : Ruchika Intra Pvt Ltd.</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container-fluid py-6 hero-start">
+        <div class="container hero-content">
+            <h1 class="hero-text py-5 wow bounceInUp">Borele World Enterprise</h1>
+            <p class="wow bounceInUp" data-wow-delay="0.5s">10 Years Legacy of Business Presentation</p>
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="container">
-            <h1 class="text-center wow bounceInUp" data-wow-delay="0.5s">Real Estate Development: Bhaiji Infraprojects Pvt Ltd.</h1>
-            <div class="row my-5 diff">
-                <div class="col-lg-3 col-12 rounded wow bounceInLeft" id="residential" data-wow-delay="1.0s">
-                    <h5>1. Residential Development:</h5>
-                    <p>Completed a 400-unit residential project named Bhaiji Panchajanya in Kondapur, Hyderabad, meeting the highest standards of urban living.</p>
-                </div>
-                <div class="col-lg-3 col-12 rounded wow bounceInUp" id="plotting" data-wow-delay="1.0s">
-                    <h5>2. Plotting Projects:</h5>
-                    <p>Developed Shyam Nagri, a thoughtfully planned 17-acre plotting project at Besa, Nagpur, creating lucrative investment opportunities for the future.</p>
-                </div>
-                <div class="col-lg-3 col-12 rounded wow bounceInRight" id="commercial" data-wow-delay="1.0s">
-                    <h5>3. Commercial Development:</h5>
-                    <p>Delivered Bhaiji Complex, a well-designed commercial project in Nagpur, offering premium spaces for businesses and retailers.</p>
-                </div>
+    <div class="container-fluid vision py-5">
+      <div class="container">
+        <h2 class="text-center pb-5 fw-bold wow bounceInUp">Trusted Leader Creating Lasting Vision <br> of Lasting Value</h2>
+        <div class="row g-4 values">
+          <div class="col-lg-4 col-md-6 rounded wow bounceInLeft" data-wow-delay="0.6s" id="vision">
+            <h4 class="text-center">Vision</h4>
+            <p>To be a trusted leader in real estate, hospitality, and financial services, creating lasting value for our customers, stakeholders, and communities.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 rounded wow bounceInUp" data-wow-delay="0.8s" id="mission">
+            <h4 class="text-center">Mission</h4>
+            <p>To deliver exceptional quality in every project and service, driven by innovation, integrity, and a customer-first approach.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 rounded wow bounceInRight" data-wow-delay="0.6s" id="core">
+            <h4 class="text-center">Core Values</h4>
+            <div class="diff">
+              <ul>
+                <li>Customer-Centricity</li>
+                <li>Integrity</li>
+                <li>Innovation</li>
+                <li>Sustainability</li>
+              </ul>
             </div>
-            <h3 class="my-5 text-center wow bounceInUp" data-wow-delay="0.5s">Ongoing Projects in Real Estate Sector</h3>
-            <div class="row ongoing mb-5">
-                <div class="col-lg-4 col-12 rounded wow bounceInLeft" data-wow-delay="1.0s" id="residential1" style="height: 200px;">
-                    <h4>Residential Development in Besa, Nagpur</h4>
-                    <p>A sprawling 5-acre residential project focused on creating community-centric modern living spaces.</p>
-                </div>
-                <div class="col-lg-4 col-12 rounded wow bounceInRight" data-wow-delay="1.0s" id="tower" style="height: 200px;">
-                    <h4>Bhaiji Tower</h4>
-                    <p>A commercial project located at Abhankar Nagar, Nagpur, offering contemporary spaces for businesses.</p>
-                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-5" id="about">
+        <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+          <h1 class="display-5 py-5 text-center wow bounceInUp fw-bold" style="color: #044b81;">About Us</h1>
+      </div>
+        <div class="row world">
+          <div class="col-lg-6 col-md-6 col-12 boxes wow bounceInLeft">
+            <div class="box1"></div>
+            <div class="box2">BORELE WORLD</div>
+            <div class="box3"></div>
+            <div class="box4">
+              <img class="rounded-pill" src="images/hospitality1 (1).jpeg" alt="">
             </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 wow bounceInRight">
+            <h2 class="fw-bold">Bhaiji Group: A Legacy of Excellence</h2>
+            <p class="info">Bhaiji Infra Projects Pvt. Ltd. is a 25-year-old legacy company founded by the visionary Mr. Shyam Borele, whose dedication and hard work laid the foundation for the company's remarkable journey. Supported by Ms. Sushma Borele, a pillar of strength, and Ms. Samiksha Borele, a dynamic leader driving innovation, the company exemplifies a harmonious blend of experience and forward-thinking leadership.
+              Over the past two and a half decades, Borele world has evolved into a diversified enterprise with operations spanning real estate, financial services, hospitality, commercial development, and residential development.
+            </p>
+          </div>
         </div>
     </div>
 
-    <div class="container-fluid" style="background-color: #3d5a80;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 wow bounceInLeft" style="text-align: center;" data-wow-delay="0.5s">
-                    <h1 class="text-center pt-5 text-light mb-5">Hospitality Sector : SB Hospitality Pvt Ltd.</h1>
-                    <img src="images/img2.jpeg" alt="" style="max-width: 100%; height: auto;">
-                </div>
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-6 my-5 p-3 col-12 rounded wow bounceInDown" data-wow-delay="0.5s" id="tiana">
-                            <h3>Tiana Inn</h3>
-                            <p>Successfully operating the Tiana Inn, a hospitality brand known for warm services and exceptional guest experiences.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6 mb-5 p-3 col-12 rounded wow bounceInUp" data-wow-delay="0.5s" id="upcoming">
-                            <h3>Upcoming Luxury Projects</h3>
-                            <p>Venturing into premium hospitality with an upcoming five-star luxury hotel and banquet facilities at Hingna Road, MIDC, Nagpur, designed to redefine comfort and set new industry standards.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="container py-5">
-            <h1 class="text-center mt-5 wow bounceInUp" data-wow-delay="0.5s">Automobile Industry: Bhaiji Motors Pvt Ltd</h1>
-            <div class="row my-5 diff">
-                <div class="col-lg-4 col-12 rounded wow bounceInLeft" data-wow-delay="0.5s" id="residential">
-                    <p>Bhaiji Moters successfully operated a Maruti Suzuki dealership for 20 years, gaining a stellar reputation for providing outstanding customer service and sales experiences. This venture helped establish the company as a trusted name in the automobile industry.</p>
-                </div>
-                <div class="col-lg-4 wow bounceInRight" data-wow-delay="0.5s">
-                    <img src="images/auto.jpeg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid" style="background-color: #3d5a80;">
-        <div class="container">
-            <h1 class="text-light text-center pt-5 wow bounceInDown" data-wow-delay="0.5s">Financial Services: Ruchika Intra Pvt Ltd.</h1>
-            <p class="text-center text-light pt-3 wow bounceInUp" data-wow-delay="0.5s">Operates as a Non-Banking Financial Company (NBFC) under the banner of Bhaiji Capital, offering a range of tailored financial solutions. These services have made mobility and financial independence accessible to thousands of customers.</p>
-            <div class="row py-5 loans">
-                <div class="col-lg-3 col-12 rounded text-dark p-3 wow bounceInLeft" data-wow-delay="0.5s" style="background-color: #e0fbfc;">
-                    <h5>1. Gold Loans:</h5>
-                    <p>Secure and fast financing against gold.</p>
-                </div>
-                <div class="col-lg-3 col-12 rounded text-dark p-3 wow bounceInUp" data-wow-delay="0.5s" style="background-color: #e0fbfc;">
-                    <h5>2. Vehicle Loans:</h5>
-                    <p>Flexible loans for two-wheelers and four-wheelers.</p>
-                </div>
-                <div class="col-lg-3 col-12 rounded text-dark p-3 wow bounceInRight" data-wow-delay="0.5s" style="background-color: #e0fbfc;">
-                    <h5>3. Loan Against Property:</h5>
-                    <p>Customized financial solutions leveraging real estate assets.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid team py-5 mb-5">
+    <div class="container-fluid pb-5 mb-5">
       <div class="container">
         <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
-            <h1 class="dusplay-5 mb-4 text-center">Meet Our Directors</h1>
-          <!-- <h1 class="display-5 mb-5">you can write sum conten</h1> -->
+          <h1 class="display-5 m-4 text-center fw-bold" style="color: #044b81;">Our Sectors</h1>
+      </div>
+      <div class="box wow bounceInUp" data-wow-delay="0.4s">
+      </div>
+      <div class="row images">
+          <div class="col-lg-2 col-md-3 col-12 wow bounceInLeft" data-wow-delay="0.6s">
+            <img src="images/real.jpeg" alt="">
+            <h5 class="text-center py-3">Real Estate Development: Bhaiji Infraprojects Pvt Ltd</h5>
+          </div>
+          <div class="col-lg-2 col-md-3 col-12 wow bounceInLeft" data-wow-delay="0.6s">
+            <img src="images/financial1.jpeg" alt="">
+            <h5 class="text-center py-3">Financial Services: Ruchika Intra Pvt Ltd </h5>
+          </div>
+          <div class="col-lg-2 col-md-3 col-12 wow bounceInRight" data-wow-delay="0.6s">
+            <img src="images/hospitality1.jpeg" alt="">
+            <h5 class="text-center py-3">Hospitality Sector: SB Hospitality Pvt Ltd.</h5>
+          </div>
+          <div class="col-lg-2 col-md-3 col-12 wow bounceInRight" data-wow-delay="0.6s">
+            <img src="images/automobile1.jpeg" alt="">
+            <h5 class="text-center py-3">Automobile Sector: Bhaiji Moters Pvt Ltd </h5>
+          </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container-fluid team p-5">
+      <div class="container">
+        <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+            <h1 class="display-5 m-4 text-center fw-bold" style="color: #044b81;">Meet Our Directors</h1>
+          <!-- <h1 class="display-5 mb-5">you can write sum content</h1> -->
         </div>
         <div class="row g-4">
           <div class="col-lg-4 col-md-6 wow bounceInUp" data-wow-delay="0.3s">
             <div class="team-item rounded">
               <img
                 class="img-fluid rounded-top"
-                src="images/shyam.jpeg"
+                src="images/shyam.png"
                 alt=""
               />
               <div class="team-content text-center py-3 bg-dark rounded-bottom">
@@ -231,12 +172,12 @@
             <div class="team-item rounded">
               <img
                 class="img-fluid rounded-top"
-                src="images/sameeksha.jpeg"
+                src="images/samiksha.png"
                 alt=""
               />
               <div class="team-content text-center py-3 bg-dark rounded-bottom">
                 <h4 style="color: #ee6c4d;">Ms. Samiksha Borele</h4>
-                <p class="text-white mb-0"></p>
+                <p class="text-white mb-0">Active Director</p>
               </div>
             </div>
           </div>
@@ -244,73 +185,9 @@
       </div>
     </div>
 
-    <div class="container-fluid py-6 mb-5" style="background-color: #3d5a80; color: white;">
-        <div class="container">
-          <div class="row g-5 align-items-top">
-            <h1 class="dusplay-5 mb-4 text-center">About Us</h1>
-            <div class="col-lg-4 wow bounceInUp" data-wow-delay="0.3s">
-              <small
-                class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3"
-                >Vision: Bhaiji Group</small
-              >
-              <p class="mb-4">
-                To be a trusted leader in real estate, hospitality, and financial services, creating lasting value for our customers, stakeholders, and communities.
-              </p>
-              <!-- <a href="" class="btn btn-primary py-3 px-5 rounded-pill">About Us<i class="fas fa-arrow-right ps-2"></i></a> -->
-            </div>
-            <div class="col-lg-4 wow bounceInUp" data-wow-delay="0.6s">
-              <small
-                class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3"
-                >Mission: Bhaiji Group </small
-              >
-              <p class="mb-4">
-                To deliver exceptional quality in every project and service, driven by innovation, integrity, and a customer-first approach.
-              </p>
-            </div>
-            <div class="col-lg-4 wow bounceInUp" data-wow-delay="0.9s">
-              <small
-                class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3"
-                >Core Values: Bhaiji Group</small>
-                <ul class="pb-5">
-                    <li>Customer-Centricity: Ensuring every service and project is tailored to meet customer expectations.</li>
-                    <li>Integrity: Operating with transparency and honesty in all business dealings.</li>
-                    <li>Innovation: Continuously seeking new ways to enhance value and efficiency.</li>
-                    <li>Sustainability: Building a better future through environmentally conscious practices.</li>
-                </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid py-6">
-        <div class="container mb-5">
-            <h1 class="dusplay-5 mb-5 text-center wow bounceInUp" data-wow-delay="0.5s">Why Choose Bhaiji Group?</h1>
-            <div class="row points">
-                <div class="col-lg-4 col-12 why wow bounceInLeft" data-wow-delay="0.5s">
-                    <i class="fa fa-check" style="font-size:48px;color:green"></i>
-                    <p><b>Legacy of Trust:</b> Over 25 years of excellence across industries.</p>
-                </div>
-                <div class="col-lg-4 col-12 why wow bounceInRight" data-wow-delay="0.5s">
-                    <i class="fa fa-check" style="font-size:48px;color:green"></i>
-                    <p><b>Diverse Expertise:</b> Proven success in real estate, hospitality, financial services, and automobiles.</p>
-                </div>
-            </div>
-            <div class="row points">
-                <div class="col-lg-4 col-12 why wow bounceInLeft" data-wow-delay="0.5s">
-                    <i class="fa fa-check" style="font-size:48px; color: green"></i>
-                    <p><b>Customer Commitment:</b> A track record of delivering quality and satisfaction.</p>
-                </div>
-                <div class="col-lg-4 col-12 why wow bounceInRight" data-wow-delay="0.5s">
-                    <i class="fa fa-check" style="font-size:48px; color:green"></i>
-                    <p><b>Innovative Approach:</b> Combining traditional values with modern methods to stay ahead of the curve.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid" id="contact" style="background-color: #3d5a80;">
+    <div class="container-fluid" id="contact">
         <div class="container pb-5">
-            <h1 class="text-center py-5 text-light">Contact Information</h1>
+            <h1 class="text-center py-5 fw-bold" style="color: #044b81;">Contact Information</h1>
             <div class="p-3 bg-light rounded contact-form">
                 <div class="row g-4">
                   <div class="col-12">
@@ -350,7 +227,7 @@
                       ></textarea>
                       <button
                         class="w-100 btn btn-primary form-control p-3 rounded-pill"
-                        type="submit" style="background-color: #ee6c4d; border: 1px solid #ee6c4d;"
+                        type="submit" style="background-color: #1d5049; border: 1px solid #1d5049;"
                       >
                         Submit Now
                       </button>
@@ -361,7 +238,7 @@
                       <div
                         class="d-inline-flex w-100 border border-primary p-4 rounded mb-4"
                       >
-                        <i class="fas fa-map-marker-alt fa-2x me-4" style="color: #ee6c4d;"></i>
+                        <i class="fas fa-map-marker-alt fa-2x me-4" style="color: #1d5049;"></i>
                         <div class="">
                           <h4 class="text-dark">Address</h4>
                           <p>SGVS, Dwarka, Near Sector – 19, New Delhi – 110 071</p>
@@ -370,7 +247,7 @@
                       <div
                         class="d-inline-flex w-100 border border-primary p-4 rounded mb-4"
                       >
-                        <i class="fas fa-envelope fa-2x me-4" style="color: #ee6c4d;"></i>
+                        <i class="fas fa-envelope fa-2x me-4" style="color: #1d5049;"></i>
                         <div class="">
                           <h4 class="text-dark">Mail Us</h4>
                           <p class="mb-2">tedxsgvs.delhi@gmail.com</p>
@@ -379,7 +256,7 @@
                       <div
                         class="d-inline-flex w-100 border border-primary p-4 rounded"
                       >
-                      <i class="fas fa-user fa-2x me-4" style="color: #ee6c4d;"></i>
+                      <i class="fas fa-user fa-2x me-4" style="color: #1d5049;"></i>
                         <div class="">
                           <h4 class="text-dark">Always there to help you!</h4>
                           <p class="mb-2">See you soon</p>
@@ -392,7 +269,7 @@
         </div>
     </div>
 
-    <a href="#" class="btn btn-md-square rounded-circle back-to-top" style="background-color: #ee6c4d; color: white;"><i class="fa fa-arrow-up"></i
+    <a href="#" class="btn btn-md-square rounded-circle back-to-top" style="background-color: #1d5049; color: white;"><i class="fa fa-arrow-up"></i
     ></a>
     <!-- Copyright Start -->
     <div class="container-fluid copyright py-4" style="background-color: #293241;">
@@ -403,7 +280,7 @@
               ><a href="#" style="color: #ee6c4d;"
                 ><i class="fas fa-copyright text-light me-2"> 2024 </i
                 >Borele World</a
-              >, All right reserved.</span
+              >, All rights reserved.</span
             >
           </div>
           <div class="col-md-6 my-auto text-center text-md-end text-white">
