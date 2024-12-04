@@ -205,13 +205,30 @@ body {
     gap: 20px;
 }
 
-#teams {
-    margin: 0 auto;;
-}
-
-.team-content {
-    width: 250px;
-}
+.team-item img {
+    width: 250px; /* Fixed width */
+    height: 300px; /* Maintain aspect ratio */
+    object-fit: cover; 
+    display: block;/* Add spacing below the image */
+  }
+  
+  /* Align content vertically */
+  .team-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+  }
+  
+  /* Style for team content */
+  .team-content {
+    width: 250px; /* Match the image width for better alignment */
+    background-color: var(--color-blue);
+    border-radius: 0 0 8px 8px;
+    padding: 0px 5px;
+  }
 
 .choose {
     background-color: var(--color-light-blue);
@@ -269,7 +286,5 @@ body {
 }
 
 @media screen and (max-width: 360px) {
-    .images img {
-        left: 50%;
-    }
+    
 }
