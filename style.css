@@ -58,17 +58,13 @@ body {
 }
 
 .hero-start {
-    position: relative;
     width: 100%;
-    overflow: hidden; /* Ensures no overflow outside the container */
+    height: 80vh; /* Adjust as necessary */
+    background-image: url("images/Banner\ -\ Borele\ World\ -\ 25\ Years\ of\ Business\ presentations\ \(1\).png");
+    background-size: cover; /* Scale image to cover the container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Avoid repetition */
 }
-
-.hero-image {
-    width: 100%;
-    height: auto; /* Maintains the aspect ratio of the image */
-    object-fit: contain; /* Ensures the full image is visible without cropping */
-}
-
 
 .vision h2 {
     color: var(--color-light-blue);
@@ -345,6 +341,11 @@ body {
     height: 250px;
 }
 
+#tiana img {
+    width: 350px; 
+    height: 350px;
+}
+
 @media (max-width: 768px) {
     .box {
         background-color: white;
@@ -363,5 +364,8 @@ body {
     }
     .hero-image {
         max-height: 60vh; /* Adjust the height for mobile devices */
+    }
+    #tiana img {
+        width: 280px;
     }
 }
