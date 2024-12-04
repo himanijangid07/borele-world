@@ -18,6 +18,22 @@ body {
     margin-top: 100px !important;
 }
 
+header {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent overflow of content */
+  }
+  
+  header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fully covers the area */
+    object-position: center; /* Centers the image */
+  }
+
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -58,7 +74,7 @@ body {
 }
 
 .hero-start {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.90) 29.25%, rgba(0, 0, 0, 0.40) 64.5%), url(images/finance5.jpeg);
+    background-image: url(images/finance5.jpeg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,7 +88,7 @@ body {
 
 .hero-content {
     position: absolute; /* Allows absolute positioning within hero-start */
-    color: white; /* Text color */
+    color: black; /* Text color */
     text-align: center; /* Center the text */
     z-index: 1; /* Ensure text appears above the background */
     align-items: center;
@@ -225,7 +241,7 @@ body {
   /* Style for team content */
   .team-content {
     width: 250px; /* Match the image width for better alignment */
-    background-color: var(--color-blue);
+    background-color: var(--color-light-blue);
     border-radius: 0 0 8px 8px;
     padding: 0px 5px;
   }
@@ -381,4 +397,20 @@ body {
     #hospitality2 {
         height: 300px;
     }
+    .w3-display-middle {
+        position: absolute; /* Keep it fixed in the middle of the image */
+        top: 50%; /* Vertically center the content */
+        left: 50%; /* Horizontally center the content */
+        transform: translate(-50%, -50%); /* Adjust for perfect centering */
+        width: 100%;
+        text-align: center;
+      }
+      
+      .w3-xxlarge {
+        font-size: 2rem; /* Adjust font size for mobile */
+      }
+      
+      p {
+        font-size: 1rem; /* Adjust the paragraph font size */
+      }
 }
