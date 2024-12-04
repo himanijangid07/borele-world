@@ -273,6 +273,25 @@ body {
     color: var(--color-green2);
 }
 
+.sectors .read {
+    background-color: var(--color-green2);
+    color: white;
+    font-weight: bold;
+}
+
+.container .read {
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-pills {
+    flex-wrap: nowrap;
+  }
+  
+  .nav-link {
+    white-space: nowrap; /* Prevents text from wrapping */
+  }
+
 @media (max-width: 768px) {
     .box {
         background-color: white;
