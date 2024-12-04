@@ -292,6 +292,79 @@ body {
     white-space: nowrap; /* Prevents text from wrapping */
   }
 
+#real1 {
+    background-color: var(--color-green1);
+    color: white;
+    margin: 10px 0px;
+    padding: 10px;
+    height: 220px;
+}
+
+#real2 {
+    background-color: var(--color-blue);
+    color: white;
+    margin: 10px 0px;
+    padding: 10px;
+    height: 220px;
+}
+
+#real3 {
+    background-color: var(--color-light-blue);
+    color: white;
+    margin: 10px 0px;
+    padding: 10px;
+    height: 220px;
+}
+
+#real1 p, #real2 p, #real3 p, #finance1 p, #finance2 p, #finance3 p, #hospitality1 p, #hospitality2 p {
+    text-align: justify;
+}
+
+.ongoing {
+    display: flex;
+    justify-content: center;
+}
+
+#finance1 {
+    background-color: var(--color-green1);
+    color: white;
+    margin: 10px 0px;
+    padding: 10px;
+    height: 150px;
+}
+
+#finance2 {
+    background-color: var(--color-blue);
+    color: white;
+    margin: 10px 0px;
+    padding: 10px;
+    height: 150px;
+}
+
+#finance3 {
+    background-color: var(--color-light-blue);
+    color: white;
+    margin: 10px 0px;
+    padding: 10px;
+    height: 150px;
+}
+
+#hospitality1 {
+    background-color: var(--color-green1);
+    color: white;
+    margin: 10px 0px;
+    padding: 10px;
+    height: 250px;
+}
+
+#hospitality2 {
+    background-color: var(--color-light-blue);
+    color: white;
+    margin: 10px 0px;
+    padding: 10px;
+    height: 250px;
+}
+
 @media (max-width: 768px) {
     .box {
         background-color: white;
@@ -305,5 +378,7 @@ body {
 }
 
 @media screen and (max-width: 360px) {
-    
+    #hospitality2 {
+        height: 300px;
+    }
 }
