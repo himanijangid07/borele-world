@@ -67,6 +67,7 @@ body {
     position: relative;
     display: flex;/* Vertically center the text */
     justify-content: center;
+    align-items: center;
 }
 
 .hero-content {
@@ -112,8 +113,12 @@ body {
     background-color: var(--color-green1);
 }
 
-#mission, #core {
+#mission {
     background-color: var(--color-blue);
+}
+
+#core {
+    background-color: var(--color-light-blue);
 }
 
 .boxes {
@@ -200,6 +205,57 @@ body {
     gap: 20px;
 }
 
+#teams {
+    margin: 0 auto;;
+}
+
+.team-content {
+    width: 250px;
+}
+
+.choose {
+    background-color: var(--color-light-blue);
+    border-top-left-radius: 40px;
+    color: white;
+    border-bottom-right-radius: 40px;
+}
+
+.b {
+    width: 150px;
+    height: 150px;
+    background-color: var(--color-green2);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b p {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    background-color: var(--color-blue);
+}
+
+.copyright a {
+    text-decoration: none;
+    color: var(--color-green2);
+}
+
 @media (max-width: 768px) {
     .box {
         background-color: white;
@@ -214,6 +270,6 @@ body {
 
 @media screen and (max-width: 360px) {
     .images img {
-        margin-top: 10px;
+        left: 50%;
     }
 }
