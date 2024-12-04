@@ -58,12 +58,17 @@ body {
 }
 
 .hero-start {
+    position: relative;
     width: 100%;
-    height: 80vh; /* Adjust as necessary */
-    background-image: url("images/Banner\ -\ Borele\ World\ -\ 25\ Years\ of\ Business\ presentations\ \(1\).png");
-    background-size: cover; /* Scale image to cover the container */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Avoid repetition */
+    height: auto; /* Ensure the height adjusts automatically */
+    overflow: hidden; /* Prevent image from overflowing */
+}
+
+.hero-start img {
+    width: 100%; /* Scale image to full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 80vh; /* Limit height to a percentage of the viewport height */
+    object-fit: cover; /* Ensure the image fills the container without distortion */
 }
 
 .vision h2 {
