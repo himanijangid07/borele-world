@@ -276,24 +276,24 @@ body {
     background-color: var(--color-green1);
     color: white;
     margin: 10px 0px;
-    padding: 10px;
-    height: 220px;
+    padding: 20px;
+    height: 250px;
 }
 
 #real2 {
     background-color: var(--color-blue);
     color: white;
     margin: 10px 0px;
-    padding: 10px;
-    height: 220px;
+    padding: 20px;
+    height: 250px;
 }
 
 #real3 {
     background-color: var(--color-light-blue);
     color: white;
     margin: 10px 0px;
-    padding: 10px;
-    height: 220px;
+    padding: 20px;
+    height: 250px;
 }
 
 #real1 p, #real2 p, #real3 p, #finance1 p, #finance2 p, #finance3 p, #hospitality1 p, #hospitality2 p {
@@ -309,31 +309,31 @@ body {
     background-color: var(--color-green1);
     color: white;
     margin: 10px 0px;
-    padding: 10px;
-    height: 150px;
+    padding: 20px;
+    height: 180px;
 }
 
 #finance2 {
     background-color: var(--color-blue);
     color: white;
     margin: 10px 0px;
-    padding: 10px;
-    height: 150px;
+    padding: 20px;
+    height: 180px;
 }
 
 #finance3 {
     background-color: var(--color-light-blue);
     color: white;
     margin: 10px 0px;
-    padding: 10px;
-    height: 150px;
+    padding: 20px;
+    height: 180px;
 }
 
 #hospitality1 {
     background-color: var(--color-green1);
     color: white;
     margin: 10px 0px;
-    padding: 10px;
+    padding: 20px;
     height: 250px;
 }
 
@@ -341,7 +341,7 @@ body {
     background-color: var(--color-light-blue);
     color: white;
     margin: 10px 0px;
-    padding: 10px;
+    padding: 20px;
     height: 250px;
 }
 
