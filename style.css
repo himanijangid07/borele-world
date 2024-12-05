@@ -65,10 +65,10 @@ body {
 }
 
 .hero-start img {
-    width: 100%; /* Scale image to full width of the container */
+    width: 100%;
     height: auto; /* Maintain aspect ratio */
-    max-height: 80vh; /* Limit height to a percentage of the viewport height */
-    object-fit: cover; /* Ensure the image fills the container without distortion */
+    object-fit: cover; /* Ensure it fills the container */
+    object-position: top; /* Align the image to the top */
 }
 
 .vision h2 {
